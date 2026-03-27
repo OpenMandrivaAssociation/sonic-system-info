@@ -60,6 +60,7 @@ BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6Gui)
 BuildRequires: cmake(Qt6Widgets)
 BuildRequires: cmake(Qt6Test)
+BuildRequires: cmake(VulkanHeaders)
 BuildRequires: pkgconfig(libusb-1.0)
 BuildRequires: vulkan-tools
 # BuildRequires: wayland-utils
