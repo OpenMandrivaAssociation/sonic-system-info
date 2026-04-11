@@ -4,7 +4,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: sonic-system-info
-Version: 6.6.3.1
+Version: 6.6.4
 Release: %{?git:0.%{git}.}1
 URL:   https://github.com/Sonic-DE/sonic-system-info
 # %if 0%{?git:1}
@@ -17,12 +17,15 @@ License: GPL
 Group: System/Libraries
 BuildRequires: cmake(KF6DocTools)
 BuildRequires: cmake(ECM)
-# BuildRequires: cmake(Wayland) >= 5.90.0
 BuildRequires: cmake(KF6I18n)
 BuildRequires: cmake(KF6Completion)
 BuildRequires: cmake(KF6Config)
 BuildRequires: cmake(KF6ConfigWidgets)
-BuildRequires: cmake(KF6CoreAddons)
+
+# pending rename
+# BuildRequires: cmake(KF6CoreAddons)
+BuildRequires: %{_lib}SonicFrameworksCoreAddons-devel
+
 BuildRequires: cmake(KF6DBusAddons)
 BuildRequires: cmake(KF6Declarative)
 BuildRequires: cmake(KF6I18n)
@@ -39,7 +42,10 @@ BuildRequires: cmake(KF6Service)
 BuildRequires: cmake(KF6Solid)
 BuildRequires: cmake(KF6WidgetsAddons)
 BuildRequires: cmake(KF6XmlGui)
-BuildRequires: cmake(KF6Kirigami2)
+
+# pending rename
+# BuildRequires: cmake(KF6Kirigami2)
+BuildRequires: %{_lib}SonicFrameworksQuickUI-devel
 
 # pending rename
 #BuildRequires: cmake(KF6Auth)
