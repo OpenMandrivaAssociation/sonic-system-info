@@ -116,5 +116,4 @@ Conflicts:   kinfocenter
 %{_datadir}/dbus-1/system-services/org.kde.kinfocenter.dmidecode.service
 %{_datadir}/dbus-1/system.d/org.kde.kinfocenter.dmidecode.conf
 %{_datadir}/polkit-1/actions/org.kde.kinfocenter.dmidecode.policy
-%{_datadir}/applications/kcm_energyinfo.desktop
 %{_datadir}/kinfocenter
